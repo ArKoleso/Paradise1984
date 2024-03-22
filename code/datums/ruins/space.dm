@@ -281,8 +281,9 @@
 	name = "Ancient Space Station"
 	description = "The crew of a space station awaken one hundred years after a crisis. Awaking to a derelict space station on the verge of collapse, and a hostile force of invading \
 	hivebots. Can the surviving crew overcome the odds and survive and rebuild, or will the cold embrace of the stars become their new home?"
-	allow_duplicates = FALSE
-	cost = 4 // fair cost for large structure
+	allow_duplicates = FALSE // One of these is enough
+	always_place = TRUE // This is on the always spawn list because of the shielding chance
+	cost = 0 // Force spawned so shouldnt have a cost
 
 /datum/map_template/ruin/space/spacehotelv1 // new map, duplicated and edited partialy from other ss13 builds
 	id = "spacehotelv1"
